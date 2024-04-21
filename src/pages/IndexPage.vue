@@ -197,45 +197,17 @@
 import { ref } from "vue";
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
-import MySlider from "components/MySlider.vue";
+
 import MyFooter from "components/MyFooter.vue";
 import CarouselLink from "components/CarouselLink.vue"
-import SliderLink from "components/SliderLink.vue"
+
 
 export default {
   name: "IndexPage",
   components: {
     MyFooter,
-    // MySlider,
     CarouselLink,
-    // SliderLink,
-  },
-  mounted() {
-    this.swiper = new Swiper(".swiper-container", {
-      slidesPerView: 3, // Number of slides to show at once
-      centeredSlides: true,
-      spaceBetween: 40, // Center the active slide
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // Add more configurations as needed
-    });
-  },
-  beforeUnmount() {
-    if (this.swiper) {
-      // Destroy swiper
-      this.swiper.destroy();
-    }
+    
   },
 };
 </script>
