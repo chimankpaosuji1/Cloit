@@ -5,7 +5,7 @@
         <div-title>
           <q-img src="../assets/logo.svg" style="width: 170px"></q-img>
         </div-title>
-        <div class="q-mr-xl">
+        <div class="q-mr-xl gt-sm">
           <q-btn-dropdown flat color="white" label="채용">
             <q-list>
               <q-item clickable v-close-popup @click="onItemClick">
@@ -54,15 +54,22 @@
           </q-btn-dropdown>
           <q-btn flat color="white" label="해외 개발자 활용 서비스" />
         </div>
-        <div>
+        <div class="gt-sm">
           <q-btn color="white" text-color="blue" label="문의하기" />
         </div>
+       <div class="lt-md"> <q-btn    
+            flat
+            dense
+            round
+            icon="menu"
+            aria-label="Menu"
+            @click="toggleLeftDrawer"
+          /></div>
       </div>
     </q-header>
 
     <!-- <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
     >
       <q-list>
@@ -111,11 +118,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 1920px;
-  height: 929px;
-  top: -15px;
-  left: -92px;
-  gap: 0px; */
   opacity: 0.8px;
 }
 </style>

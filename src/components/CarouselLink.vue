@@ -1,5 +1,5 @@
 <template>
-  <section class="swiper mySwiper">
+  <q-swiper class="swiper mySwiper">
     <div class="swiper-wrapper">
 
       <div class="card swiper-slide">
@@ -60,7 +60,7 @@
          
       
     </div>
-  </section>
+  </q-swiper>
 </template>
 
 <script>
