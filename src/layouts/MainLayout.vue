@@ -68,24 +68,24 @@
       </div>
     </q-header>
 
-    <!-- <q-drawer
+    <q-drawer
       v-model="leftDrawerOpen"
       bordered
     >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
+      <q-list class="q-py-xl">
+        
 
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"
           v-bind="link"
         />
+
+        <div class="q-py-xl" style="margin-left:auto; dispaly:block; margin-right: auto; width:50%">
+          <q-btn outline text-color="blue" to="/" label="문의하기"/>
+        </div>
       </q-list>
-    </q-drawer> -->
+    </q-drawer>
 
     <q-page-container>
       <router-view />
@@ -132,47 +132,28 @@ defineOptions({
 
 const linksList = [
   {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
+    title: "채용",
+    link: "/",
   },
   {
-    title: "Github",
-    caption: "github.com/quasarframework",
+    title: "해외 개발자 원격 채용",
     icon: "code",
-    link: "https://github.com/quasarframework",
+    link: "/",
   },
   {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
+    title: "외국인 원격 채용 (비개발 직군)",
+    icon: "code",
+    link: "/",
   },
   {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
+    title: "한국어 가능 외국인 채용",
+    icon: "code",
+    link: "/",
   },
   {
-    title: "Twitter",
-    caption: "@quasarframework",
-    icon: "rss_feed",
-    link: "https://twitter.quasar.dev",
-  },
-  {
-    title: "Facebook",
-    caption: "@QuasarFramework",
-    icon: "public",
-    link: "https://facebook.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
-    icon: "favorite",
-    link: "https://awesome.quasar.dev",
-  },
+    title: "해외 개발자 활용 서비스",
+    link: "/",
+  }
 ];
 
 const leftDrawerOpen = ref(false);
