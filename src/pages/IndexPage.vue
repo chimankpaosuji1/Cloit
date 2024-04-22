@@ -77,6 +77,28 @@
             <span class="text-white text-h6 text-bold">해외 마케팅</span>
           </div>
         </div>
+        <div class="lt-md " style="font-size: 16px; display:block; gap: 10px; " >
+          <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+          unchecked-icon="check_box_outline_blank"
+          class="white-label"
+          color="white"/>
+           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+          unchecked-icon="check_box_outline_blank"
+          class="white-label"
+          color="white"/> 
+           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+          unchecked-icon="check_box_outline_blank"
+          class="white-label"
+          color="white"/>
+           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+          unchecked-icon="check_box_outline_blank"
+          class="white-label"
+          color="white"/>
+        </div>
+        <div class="lt-md q-mb-lg flex justify-start items-end">
+          <q-btn tag="a" href="/" flat label="개발자가필요하신가요" no-caps style="font-size: larger; text-decoration: underline; color: #FBFF23 !important;"/>
+        </div>
+        
       </div>
     </div>
     <MyFooter />    
@@ -190,6 +212,15 @@
   /* background-size: cover; */
   height: fit-content;
 }
+.home {
+ padding: 0 20px 20px 20px;
+}
+}
+.white-label .q-checkbox__label {
+  color: white;
+}
+.white-label {
+  color: white;
 }
 </style>
 
@@ -209,5 +240,23 @@ export default {
     CarouselLink,
     
   },
+  data() {
+    return {
+      checked: true
+    };
+  },
+
+  setup () {
+    return {
+      teal: ref(true),
+      orange: ref(false),
+      red: ref(false),
+      cyan: ref(true),
+       left: ref(true),
+      right: ref(false),
+      left2: ref(true),
+      right2: ref(false)
+    }
+  }
 };
 </script>
