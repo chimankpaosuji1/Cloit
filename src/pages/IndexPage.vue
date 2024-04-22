@@ -3,7 +3,7 @@
     <div class="banner">
       <div class="home">
         <div class="row">
-          <div class="col">
+          <div class="col q-pr-md">
             <div class="text-white text-bold text-h3 q-mt-xl q-pt-xl q-pb-lg">
               최고의 실력을 가진 <br />
               외국인 인재를 찾고 계신가요?
