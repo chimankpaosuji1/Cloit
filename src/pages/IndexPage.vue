@@ -42,15 +42,16 @@
           </div>
           <div class="col gt-sm">
             <div class="q-py-xl">
-              <CarouselLink />
+             
+              <SliderLink />
             </div>
           </div>
         </div>
-         <div class="flex items-center justify-center lt-md">
-            <div class="q-pa-xl">
-              <CarouselLink />
-            </div>
+        <div class="flex items-center justify-center lt-md">
+          <div class="q-pa-xl">
+            <SliderLink />
           </div>
+        </div>
         <div class="btn-section gt-sm">
           <div class="btn">
             <q-img src="../assets/icon1.svg" alt="icon1" width="30px" />
@@ -77,31 +78,57 @@
             <span class="text-white text-h6 text-bold">해외 마케팅</span>
           </div>
         </div>
-        <div class="lt-md " style="font-size: 16px; display:block; gap: 10px; " >
-          <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
-          unchecked-icon="check_box_outline_blank"
-          class="white-label"
-          color="white"/>
-           <q-checkbox v-model="checked1" label="한국어 능력" checked-icon="check_box"
-          unchecked-icon="check_box_outline_blank"
-          class="white-label"
-          color="white"/> 
-           <q-checkbox v-model="checked2" label="한국어 능력" checked-icon="check_box"
-          unchecked-icon="check_box_outline_blank"
-          class="white-label"
-          color="white"/>
-           <q-checkbox v-model="checked3" label="한국어 능력" checked-icon="check_box"
-          unchecked-icon="check_box_outline_blank"
-          class="white-label"
-          color="white"/>
+        <div class="lt-md" style="font-size: 16px; display: block; gap: 10px">
+          <q-checkbox
+            v-model="checked"
+            label="한국어 능력"
+            checked-icon="check_box"
+            unchecked-icon="check_box_outline_blank"
+            class="white-label"
+            color="white"
+          />
+          <q-checkbox
+            v-model="checked1"
+            label="한국어 능력"
+            checked-icon="check_box"
+            unchecked-icon="check_box_outline_blank"
+            class="white-label"
+            color="white"
+          />
+          <q-checkbox
+            v-model="checked2"
+            label="한국어 능력"
+            checked-icon="check_box"
+            unchecked-icon="check_box_outline_blank"
+            class="white-label"
+            color="white"
+          />
+          <q-checkbox
+            v-model="checked3"
+            label="한국어 능력"
+            checked-icon="check_box"
+            unchecked-icon="check_box_outline_blank"
+            class="white-label"
+            color="white"
+          />
         </div>
         <div class="lt-md q-mb-lg flex justify-start items-end">
-          <q-btn tag="a" href="/" flat label="개발자가필요하신가요" no-caps style="font-size: larger; text-decoration: underline; color: #FBFF23 !important;"/>
+          <q-btn
+            tag="a"
+            href="/"
+            flat
+            label="개발자가필요하신가요"
+            no-caps
+            style="
+              font-size: larger;
+              text-decoration: underline;
+              color: #fbff23 !important;
+            "
+          />
         </div>
-        
       </div>
     </div>
-    <MyFooter />    
+    <MyFooter />
   </q-page>
 </template>
 
@@ -207,14 +234,14 @@
 }
 @media (max-width: 1200px) {
   .banner {
-  background-image: url("../assets/banner.png");
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  height: fit-content;
-}
-.home {
- padding: 0 20px 20px 20px;
-}
+    background-image: url("../assets/banner.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: fit-content;
+  }
+  .home {
+    padding: 0 20px 20px 20px;
+  }
 }
 .white-label .q-checkbox__label {
   color: white;
@@ -230,15 +257,13 @@ import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 
 import MyFooter from "components/MyFooter.vue";
-import CarouselLink from "components/CarouselLink.vue"
-
+import SliderLink from "components/SliderLink.vue";
 
 export default {
   name: "IndexPage",
   components: {
     MyFooter,
-    CarouselLink,
-    
+    SliderLink,
   },
   data() {
     return {
@@ -248,6 +273,5 @@ export default {
       checked3: true,
     };
   },
-
 };
 </script>
