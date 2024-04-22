@@ -199,7 +199,7 @@ export default {
   filter: blur(2px);
   background: #edfcff;
   height: 390px;
-  margin-top: 5px;
+  margin-top: 10px;
   z-index: -10px;
 }
 .section .swiper-slide-active {
