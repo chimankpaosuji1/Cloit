@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="swiper" id="swiper">
+    <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide card">
           <div class="card__image">
@@ -136,11 +136,6 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 export default {
   name: "SliderLink",
   mounted() {
@@ -217,57 +212,10 @@ export default {
 }
 
 .section .swiper-slide span {
-  /* text-transform: uppercase; */
   color: #000;
-  /* background: #1b7402; */
-  /* padding: 7px 18px 7px 25px; */
   display: inline-block;
   border-radius: 0 20px 20px 0px;
-  /* letter-spacing: 2px; */
-  /* font-size: 0.8rem; */
   font-family: "poppins", sans-serif;
-}
-
-.section .swiper-slide--one span {
-  background: #62667f;
-}
-
-.section .swiper-slide--two span {
-  background: #087ac4;
-}
-
-.swiper-slide--three span {
-  background: #b45205;
-}
-
-.section .swiper-slide--four span {
-  background: #087ac4;
-}
-
-.section .swiper-slide h2 {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  margin-bottom: 15px;
-  padding: 25px 45px 0 25px;
-}
-
-.section .swiper-slide p {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  display: flex;
-  align-items: center;
-  padding: 0 25px 35px 25px;
-}
-
-.section .swiper-slide svg {
-  color: #fff;
-  width: 22px;
-  height: 22px;
-  margin-right: 7px;
 }
 
 .section .swiper-3d .swiper-slide-shadow-left,
