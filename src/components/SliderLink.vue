@@ -266,6 +266,7 @@ export default {
 .section .card__name {
   font-size: 16px;
   font-weight: 900;
+  color: blue ! important;
 }
 
 .section .card__text {
