@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="flex items-center justify-center lt-md">
-          <div class="q-pa-xl">
+          <div class="q-pa-md">
             <SliderLink />
           </div>
         </div>
