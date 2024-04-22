@@ -82,15 +82,15 @@
           unchecked-icon="check_box_outline_blank"
           class="white-label"
           color="white"/>
-           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+           <q-checkbox v-model="checked1" label="한국어 능력" checked-icon="check_box"
           unchecked-icon="check_box_outline_blank"
           class="white-label"
           color="white"/> 
-           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+           <q-checkbox v-model="checked2" label="한국어 능력" checked-icon="check_box"
           unchecked-icon="check_box_outline_blank"
           class="white-label"
           color="white"/>
-           <q-checkbox v-model="checked" label="한국어 능력" checked-icon="check_box"
+           <q-checkbox v-model="checked3" label="한국어 능력" checked-icon="check_box"
           unchecked-icon="check_box_outline_blank"
           class="white-label"
           color="white"/>
@@ -242,21 +242,12 @@ export default {
   },
   data() {
     return {
-      checked: true
+      checked: true,
+      checked1: true,
+      checked2: true,
+      checked3: true,
     };
   },
 
-  setup () {
-    return {
-      teal: ref(true),
-      orange: ref(false),
-      red: ref(false),
-      cyan: ref(true),
-       left: ref(true),
-      right: ref(false),
-      left2: ref(true),
-      right2: ref(false)
-    }
-  }
 };
 </script>
