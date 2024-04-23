@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="col gt-sm">
-            <div class="q-py-xl">
+            <div class="q-pt-md">
              
               <SliderLink />
             </div>
